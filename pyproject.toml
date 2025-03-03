@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools >= 69.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tplinkrouterc6u"
+dynamic = ["version", "dependencies"]
+keywords = ["tplink", "router", "c6u"]
+requires-python = ">=3.11,<4.0"
+authors = [
+    {name = "Alex Erohin", email = "alexanderErohin@yandex.ru"}
+]
+description = "TP-Link Router API"
+readme = "README.md"
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only"
+]
+
+[project.urls]
+homepage = "https://github.com/alexerohin/tplinkrouterc6u"
+issues = "https://github.com/alexerohin/tplinkrouterc6u/issues"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
